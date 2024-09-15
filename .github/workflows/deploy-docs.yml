@@ -20,6 +20,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+        env:
+          TURBO_TOKEN: CG77gL4IFd82cXjVH8w4IBWr
+          TURBO_TEAM: tiago-forwards-projects
 
       - name: Deploy storybook
         working-directory: ./packages/docs
